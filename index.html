@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake & Fake News Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://ik.imagekit.io/upgrad1/abroad-images/blog/-1/-1/fake-news-detection-project-in-python/images/951_Fake_News_Detection_Project0JVQBV.png" alt="lOGO">
+            <h1>AI-Powered Deepfake & Fake News Detection</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Upload Media for Deepfake Detection</h2>
+            <input type="file" id="fileUpload" accept="image/*,video/*">
+            <button onclick="uploadMedia()">Detect Deepfake</button>
+            <p id="mediaResult"></p>
+        </div>
+
+        <div class="container">
+            <h2>Enter Text for Fake News Detection</h2>
+            <textarea id="newsInput" placeholder="Paste news content here..."></textarea>
+            <button onclick="detectFakeNews()">Check News</button>
+            <p id="newsResult"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by AI & DevOps | © 2025</p>
+    </footer>
+
+</body>
+</html>
